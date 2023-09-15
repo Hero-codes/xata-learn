@@ -1,0 +1,16 @@
+{
+  "id": "mig_cjrm4ucjnjqbai9aq2v0",
+  "parentID": "mig_cjrm4q4jnjqbai9aq2u0",
+  "checksum": "1:35bca83da1a57dd85f91b432ddc2130f37d630e9c665f0faeac6163cc9489a6c",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "coverImg",
+          "type": "file[]"
+        },
+        "table": "Jobs"
+      }
+    }
+  ]
+}

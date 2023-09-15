@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Ralph-Codes-s-workspace-uglabh.us-east-1.xata.sh/db/Jobber",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}
