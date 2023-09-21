@@ -1,0 +1,13 @@
+{
+  "id": "mig_ck07aid4c97g37ghtbv0",
+  "parentID": "mig_cjsvqt5hb6e376l19g40",
+  "checksum": "1:2cd7d764eafdf29ec70af19ab2f9e46435557f2023110710136300f20729fd5c",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "logo",
+        "table": "Jobs"
+      }
+    }
+  ]
+}

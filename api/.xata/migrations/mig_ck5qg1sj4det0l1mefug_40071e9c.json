@@ -1,0 +1,13 @@
+{
+  "id": "mig_ck5qg1sj4det0l1mefug",
+  "parentID": "mig_ck27fbiir696j8bc4mk0",
+  "checksum": "1:40071e9c4c8f1172ed8fee4446cb1d1d9599aec6f6723c83161e5cf2e18625a3",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "isApplied",
+        "table": "Jobs"
+      }
+    }
+  ]
+}

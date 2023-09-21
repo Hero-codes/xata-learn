@@ -1,0 +1,13 @@
+{
+  "id": "mig_ck27f62ir696j8bc4mj0",
+  "parentID": "mig_ck07apdvjn8ikqqgdc8g",
+  "checksum": "1:08059be6476fa79dfdd3364c74c06d5f8d1e87fb706092cb5307bfd426fc10bc",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "avatarImg",
+        "table": "Jobs"
+      }
+    }
+  ]
+}

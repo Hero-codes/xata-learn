@@ -13,14 +13,22 @@ const tables = [
       { name: "email", type: "email", unique: true },
       { name: "password", type: "string" },
     ],
+    revLinks: [{ column: "userID", table: "Applications" }],
   },
   {
     name: "Jobs",
     columns: [
       { name: "company", type: "string" },
       { name: "description", type: "text" },
-      { name: "logo", type: "file[]" },
-      { name: "isApplied", type: "bool", defaultValue: "false" },
+      { name: "avatarImg", type: "file" },
+    ],
+    revLinks: [{ column: "jobID", table: "Applications" }],
+  },
+  {
+    name: "Applications",
+    columns: [
+      { name: "userID", type: "link", link: { table: "Users" }, unique: true },
+      { name: "jobID", type: "link", link: { table: "Jobs" } },
     ],
   },
 ] as const;
@@ -34,9 +42,13 @@ export type UsersRecord = Users & XataRecord;
 export type Jobs = InferredTypes["Jobs"];
 export type JobsRecord = Jobs & XataRecord;
 
+export type Applications = InferredTypes["Applications"];
+export type ApplicationsRecord = Applications & XataRecord;
+
 export type DatabaseSchema = {
   Users: UsersRecord;
   Jobs: JobsRecord;
+  Applications: ApplicationsRecord;
 };
 
 const DatabaseClient = buildClient();

@@ -1,0 +1,16 @@
+{
+  "id": "mig_ck07apdvjn8ikqqgdc8g",
+  "parentID": "mig_ck07aid4c97g37ghtbv0",
+  "checksum": "1:c491c7f7e90ab4d7d67a71ec9bb4b67e6f3a9474228a0376e8c929a1c3ece391",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "avatarImg",
+          "type": "file[]"
+        },
+        "table": "Jobs"
+      }
+    }
+  ]
+}
