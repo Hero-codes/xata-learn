@@ -13,7 +13,6 @@ const tables = [
       { name: "email", type: "email", unique: true },
       { name: "password", type: "string" },
     ],
-    revLinks: [{ column: "userID", table: "Applications" }],
   },
   {
     name: "Jobs",
@@ -22,13 +21,12 @@ const tables = [
       { name: "description", type: "text" },
       { name: "avatarImg", type: "file" },
     ],
-    revLinks: [{ column: "jobID", table: "Applications" }],
   },
   {
     name: "Applications",
     columns: [
-      { name: "userID", type: "link", link: { table: "Users" }, unique: true },
-      { name: "jobID", type: "link", link: { table: "Jobs" } },
+      { name: "userID", type: "string", unique: true },
+      { name: "jobID", type: "string", unique: true },
     ],
   },
 ] as const;

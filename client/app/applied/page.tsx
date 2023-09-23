@@ -1,9 +1,20 @@
+"use client";
+import React, { useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import { useRouter } from "next/navigation"
 import sample from "@/public/errorimg.png"
 
 export default function JobsApplied() {
+
+    const router = useRouter();
+    // @ts-ignore
+    const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+    useEffect(() => {
+        if (!currentUser) return router.push("/");
+    }, []);
+
     return (
         <div className="container mx-auto px-3">
             <div className="flex flex-col gap-8">

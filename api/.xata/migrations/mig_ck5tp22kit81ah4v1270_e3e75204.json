@@ -1,0 +1,12 @@
+{
+  "id": "mig_ck5tp22kit81ah4v1270",
+  "parentID": "mig_ck5qgskj4det0l1meg20",
+  "checksum": "1:e3e75204ad9be672c167e9ea21df8fa51894be8ef2dbab816ea207916db04379",
+  "operations": [
+    {
+      "removeTable": {
+        "table": "Applications"
+      }
+    }
+  ]
+}

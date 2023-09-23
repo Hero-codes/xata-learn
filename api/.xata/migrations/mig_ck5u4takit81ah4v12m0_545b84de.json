@@ -1,0 +1,17 @@
+{
+  "id": "mig_ck5u4takit81ah4v12m0",
+  "parentID": "mig_ck5u4r4j4det0l1mfac0",
+  "checksum": "1:545b84de9425e0e54882d1bd24d8aa601c016d34e91ad244073b70f4555117b0",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "userID",
+          "type": "string",
+          "unique": true
+        },
+        "table": "Applications"
+      }
+    }
+  ]
+}

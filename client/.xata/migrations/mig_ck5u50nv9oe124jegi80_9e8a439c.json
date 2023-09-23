@@ -1,0 +1,17 @@
+{
+  "id": "mig_ck5u50nv9oe124jegi80",
+  "parentID": "mig_ck5u4takit81ah4v12m0",
+  "checksum": "1:9e8a439c32f7890e6877b167897cf13f90ab16af6fc11854d0406f4097284a48",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "jobID",
+          "type": "string",
+          "unique": true
+        },
+        "table": "Applications"
+      }
+    }
+  ]
+}
